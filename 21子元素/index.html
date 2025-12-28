@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article p:first-child{
+            color:green;
+        }
+        article p:last-child{
+            color:red;
+        }
+        /* article p:nth-child(1){
+            color: green;
+        }
+        article p:nth-child(4){
+            color: red;
+        } 
+            */
+        article p:nth-child(2){
+            color: blue;
+        }
+        article p:nth-child(3){
+            color: orange;
+        }
+        
+        li:nth-child(1),li:nth-child(7){
+            /* color: white;
+            background-color: gray; */
+        }
+        /* 偶數項
+        li:nth-child(even){
+            color: white;
+            background-color: gray;
+        }
+        /* 奇數項 */
+        /*li:nth-child(odd){
+            color: gray;
+            background-color: white;
+        } */
+        li:nth-child(3n+1){   /*n從0開始*/
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <p>這是第一段文字</p>
+        <p>這是第二段文字</p>
+        <p>這是第三段文字</p>
+        <p>這是最後一段文字，想閱讀更多?<a href="https://example.com">點擊這裡</a></p>
+    </article>
+    <article>
+        <p>這是另一篇文章的第一段文字</p>
+        <p>這是第二段文字</p>
+        <p>這是第三段文字</p>
+        <p>這是最後一段文字，想閱讀更多?<a href="https://example.com">點擊這裡</a></p>
+    </article>
+    <ul>
+        <li>項目一</li>
+        <li>項目二</li>
+        <li>項目三</li>
+        <li>項目四</li>
+        <li>項目五</li>
+        <li>項目六</li>
+        <li>項目七</li>
+    </ul>
+</body>
+</html>

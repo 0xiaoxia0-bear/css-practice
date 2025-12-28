@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::first-letter{
+            color: blue;
+        }
+        p::first-line{
+            color: red;
+        }
+        p::selection{
+            background-color: gray;
+            color: white;
+        }
+        #fruit li:before{
+            content: "💩 ";
+        }
+        #apple::after{
+            content: " 🍎";
+        }
+        #orange::after{
+            content: " 🍊";
+        }
+        #banana::after{
+            content: " 🍌";
+        }
+        #fruit li::marker{
+            content:" 😲 ";
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 偽元素</h1>
+    <p>Lorem ipsum1 dolor, sit amet consectetur adipisicing elit. Fuga quibusdam corporis vel est laboriosam illum cupiditate doloremque atque amet velit, eveniet eligendi earum, obcaecati optio soluta ad, itaque rerum perspiciatis.</p>
+    <ul id="fruit">
+        <li id="apple">apple</li>
+        <li id="orange">orange</li>
+        <li id="banana">banana</li>
+    </ul>
+</body>
+</html>
